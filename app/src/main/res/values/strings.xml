@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Kardan Service</string>
+    <string name="welcome_to_kardan">به اپلیکیشن کاردان خوش آمدید</string>
+    <string name="enterMobile">موبایل خود را وارد کنید</string>
+    <string name="login">ورود</string>
+    <string name="enter_by_google_account">ورود به برنامه از طریق حساب کاربری گوگل</string>
+    <string name="google_login">CONTINUE WITH GOOGLE</string>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layoutDirection="rtl"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/welcomeToKardan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/welcome_to_kardan"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/mobileEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/welcomeToKardan"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bg_rectangle_circle_white"
+        android:gravity="center_vertical"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:textColorHint="@color/textColorPrimary"
+        app:theme="@style/TextAppearance.App.TextInputLayout">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/mobileValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enterMobile"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/textColorPrimary"
+            android:textDirection="ltr"
+            android:textSize="16sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mobileEditText"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_rectangle_circle_primary_dark"
+        android:text="@string/login"
+        android:textColor="@color/defaultBackground"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linLay"
+        android:layout_below="@+id/loginButton"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/textColorPrimary" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/googleLoginText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/enter_by_google_account"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/textColorPrimary" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/googleLoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linLay"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:drawableStart="@drawable/google"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_rectangle_circle_white"
+        android:text="@string/google_login"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="16dp" />
+
+</RelativeLayout>
